@@ -1,0 +1,16 @@
+x = int(input("Enter a number : "))
+
+#The function
+def find_sum(sum, counter):
+    sum = sum + counter;
+    
+    #the base
+    if(counter != 1):
+        counter = counter-1;
+        print(sum)
+        find_sum(sum, counter)
+    else:
+        print("Total sum = " + str(sum))
+    
+#calls the function
+find_sum(0, x)
