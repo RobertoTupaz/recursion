@@ -1,0 +1,14 @@
+x = int(input("Enter a number : "))
+
+def addNumber(sum, counter):
+
+    sum = sum + counter
+
+    if(counter != x):
+        counter = counter + 1
+        print(sum)
+        addNumber(sum, counter)
+    else:
+        print("Total sum = " + str(sum))
+        
+addNumber(0, 1)
