@@ -12,7 +12,7 @@ def find_sum(sum, counter):
         print("Total sum = " + str(sum))
         
         
-#variable declaration
+#variable declaration and getting the input from user
 x = int(input("Enter a number : "))
 
 #calls the add number function
