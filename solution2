@@ -1,5 +1,3 @@
-x = int(input("Enter a number : "))
-
 #The function
 def find_sum(sum, counter):
     sum = sum + counter;
@@ -11,6 +9,9 @@ def find_sum(sum, counter):
         find_sum(sum, counter)
     else:
         print("Total sum = " + str(sum))
-    
+
+#variable declaration and getting the imput from user
+x = int(input("Enter a number : "))
+
 #calls the function
 find_sum(0, x)
