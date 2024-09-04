@@ -1,14 +1,19 @@
-x = int(input("Enter a number : "))
-
-def addNumber(sum, counter):
+#the function with find_sum as name
+def find_sum(sum, counter):
 
     sum = sum + counter
 
+    #The base
     if(counter != x):
         counter = counter + 1
         print(sum)
-        addNumber(sum, counter)
+        find_sum(sum, counter)
     else:
         print("Total sum = " + str(sum))
         
-addNumber(0, 1)
+        
+#variable declaration
+x = int(input("Enter a number : "))
+
+#calls the add number function
+find_sum(0, 1)
